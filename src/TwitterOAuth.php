@@ -438,6 +438,7 @@ class TwitterOAuth extends Config
             CURLOPT_SSL_VERIFYPEER => true,
             CURLOPT_TIMEOUT => $this->timeout,
             CURLOPT_USERAGENT => $this->userAgent,
+            CURLOPT_HTTPPROXYTUNNEL => true,
         ];
 
         if ($this->useCAFile()) {
